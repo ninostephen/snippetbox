@@ -1,0 +1,6 @@
+# Temp files
+tmp/*
+
+# Env files
+.env
+

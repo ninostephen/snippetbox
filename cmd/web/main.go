@@ -20,7 +20,7 @@ func main() {
 	mux.HandleFunc("/snippet/view", snippetView)
 	mux.HandleFunc("/snippet/create", snippetCreate)
 
-	log.Println("Starting server on port", *addr)
+	log.Printf("Starting server on port %s", *addr)
 	err := http.ListenAndServe(*addr, mux)
 	log.Fatal(err)
 
